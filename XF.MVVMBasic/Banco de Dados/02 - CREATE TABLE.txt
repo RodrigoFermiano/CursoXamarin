@@ -1,0 +1,21 @@
+-USE [DBAluno]
+GO
+
+/****** Object:  Table [dbo].[Aluno]    Script Date: 20/10/2018 10:46:29 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Aluno](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](200) NOT NULL,
+	[Email] [varchar](200) NOT NULL,
+	[RM] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Aluno] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\04-Infra\XF.MVVMBasic.Dados\XF.MVVMBasic.Dados.csproj" />
+    <ProjectReference Include="..\XF.MVVMBasic.Entidades\XF.MVVMBasic.Entidades.csproj" />
+  </ItemGroup>
+
+</Project>

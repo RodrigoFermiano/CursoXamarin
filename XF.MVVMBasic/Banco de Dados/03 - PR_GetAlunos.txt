@@ -1,0 +1,7 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PR_GetAlunos]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[PR_GetAlunos]
+go
+CREATE PROCEDURE PR_GetAlunos
+AS
+SELECT * FROM Aluno
+GO;

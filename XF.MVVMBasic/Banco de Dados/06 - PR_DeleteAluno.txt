@@ -1,0 +1,9 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PR_PutAluno]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[PR_PutAluno]
+go
+CREATE PROCEDURE PR_PutAluno(@Id int, @Nome varchar(500), @RM varchar(50), @Email varchar(200))
+AS
+UPDATE Aluno SET Nome = @Nome, Email = @Email,RM = @RM
+WHERE Id = @Id
+
+GO
